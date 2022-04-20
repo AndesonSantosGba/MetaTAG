@@ -1,0 +1,64 @@
+/*Confirguração da janela central*/
+#tela {
+    align-self: center;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    /*background: rgb(13,204,255);
+    background: linear-gradient(60deg, rgba(13,204,255,1) 0%, rgba(71,96,255,1) 100%);*/
+    margin-top: 5%;
+    margin-left: 37%;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 1px 1px 7px rgb(177, 176, 176);
+}
+/*Animação da janela central*/
+#tela:hover{
+    background-color: rgb(235, 235, 235);
+}
+/*ICONE DA JANELA CENTRAL*/
+#imag-innova{
+    width: 60px;
+}
+/*ANIMAÇÃO DO ICONE DA JANELA CENTRAL*/
+#imag-innova:hover{
+    transform: scale(1.2);
+
+    
+}
+/*CONTAINER ONDE ENCONTRA-SE A IMAGEM*/
+#div-imag{
+    padding-bottom: 40px;
+}
+/*TITULO DE BEM VINDO*/
+p{
+    color: rgb(0, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 70px;
+    font-size: 20px;
+}
+/*ANIMAÇÃO DO TITULO DE BEM VINDO*/
+p:hover{
+    color: rgb(83, 83, 83);
+}
+/*CONFIRGUAÇÃO DE CORES DA ÁREA TOTAL DO NAVEGADOR*/
+body{
+    background: rgb(0, 0, 0);
+    
+
+}
+/*CONFIGURAÇÃO DO FOMULARIO*/
+#form{
+    margin-top: 40px;
+}
+/*CONFIGURAÇÃO DO TEXTO INTERNO DO FORMULARIO*/
+.mb-3{
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*CONFIGURAÇÃO DO TEXTO DO TITULO DA PAGINA APOS O LOGIN*/
+#icone{
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+}
