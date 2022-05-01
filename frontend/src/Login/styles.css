@@ -16,6 +16,7 @@
 /*Animação da janela central*/
 #tela:hover{
     background-color: rgb(235, 235, 235);
+
 }
 /*ICONE DA JANELA CENTRAL*/
 #imag-innova{
@@ -50,12 +51,11 @@ body{
 }
 /*CONFIGURAÇÃO DO FOMULARIO*/
 #form{
-    margin-top: 40px;
+    width: 100%; 
 }
 /*CONFIGURAÇÃO DO TEXTO INTERNO DO FORMULARIO*/
 .mb-3{
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 /*CONFIGURAÇÃO DO TEXTO DO TITULO DA PAGINA APOS O LOGIN*/
 #icone{
