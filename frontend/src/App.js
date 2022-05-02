@@ -1,8 +1,9 @@
-import Login from './Login'
+import React from 'react';
 
+import Rotas from './routes'
 function App() {
   return (
-    <Login/>
+    <Rotas/>
   );
 }
 

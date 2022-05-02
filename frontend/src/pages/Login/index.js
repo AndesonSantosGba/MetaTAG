@@ -1,22 +1,30 @@
 import React, {useState} from "react";
 import './styles.css'
-import '../bootstrap.css'
+import '../../bootstrap.css'
 import {useNavigate} from 'react-router-dom'
-import Logo from '../assets/logo2.ico'
-import api from '../services/api'
+import Logo from '../../assets/logo2.ico'
+import api from '../../services/api'
+import Loading from '../../assets/Loading'
 
 
 function Login(){
+  const [loading, setLoading] = useState(false)
+  const Navigate = useNavigate()
   const [email, setEmail ] = useState('')
   const [senha, setSenha ] = useState('') 
   async function handleLogin(e){
     e.preventDefault()
     const response = await api.post('/', {email, senha})
-    if (response.status == 200){
-      alert('login realizado')
+    if (response.status === 200){
+      setTimeout(
+      function(){
+      setLoading(true)
+      Navigate('/home')
+      }, 3000)
+      
     }
-    if(response.status == 400){
-      alert(response.error)
+    if(response.status === 400){
+      alert(response.data)
 
 
      }
@@ -36,6 +44,9 @@ function Login(){
      {/* DIVISÃO ONDE CONTEM O FORMULARIO*/}   
      <div className="form">
        {/* INICIO DO FORMULARIO*/}
+       {setLoading == true &&(
+         <Loading/>
+       )}
        <form onSubmit={handleLogin}>
          <div className="mb-3">
            <label htmlFor="email">Email:</label>
